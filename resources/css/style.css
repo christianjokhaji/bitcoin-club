@@ -1,0 +1,213 @@
+/* Global Styles */
+
+html {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 4rem;
+	color: white;
+	font-weight: 900;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	font-weight: 700;
+}
+
+h3 {
+	color: white;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+img {
+	width: 144px;
+	height: 144px;
+	margin-bottom: 1rem;
+}
+
+blockquote {
+	width: clamp(320px, 80%, 600px);
+	background-color: #ebebeb;
+	font-style: italic;
+	font-size: 1.5rem;
+	padding: 15px;
+	margin-bottom: 2rem;
+	border-radius: 0.3rem;
+	line-height: 1.5;
+}
+
+blockquote > p::before, blockquote p::after {
+	content: '"';
+	padding: 0px 10px;
+	font-size: 2rem;
+}
+
+figcaption {
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+cite {
+	font-style: italic;
+}
+
+i {
+	margin-bottom: 1.5rem;
+}
+
+a {
+	color: #f7931a;
+}
+
+a:hover {
+	color: #303132;
+}
+
+span {
+	color: #f7931a;
+}
+
+/* Section Styles */
+
+header {
+	height: 120px;
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+  	background-position: center;
+ 	background-size: cover;
+}
+
+section {
+	width: 100%;
+	padding: 50px 0px;
+}
+
+footer {
+	background-color: #303132;
+	color: white;
+	justify-content: space-between;
+	height: 100px;
+	font-size: 1rem;
+}
+
+footer > p {
+	align-self: center;
+}
+
+footer > p:nth-child(1) {
+	padding-left: 50px;
+}
+
+footer > p:nth-child(2) {
+	padding-right: 50px;
+}
+
+/* Class Styles */
+
+.flex {
+	display: flex;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.centered {
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.card {
+	background-color: #303132;
+	width: 350px;
+	height: 600px;
+	border-radius: 1.5em;
+}
+
+.card > p {
+	color: white;
+	max-width: 80%;
+	align-self: center;
+	padding-top: 15px;
+	line-height: 1.5;
+	font-size: 1.5rem;
+}
+
+.card > a {
+	margin-top: 25px;
+	color: black;
+	background-color: #f7931a;
+	width: 75%;
+	height: 60px;
+	align-self: center;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 1.5rem;
+	font-size: 1.5rem;
+}
+
+.card > a:hover {
+	background-color: #ffaa43;
+}
+
+/* ID Styles */
+
+#advantages {
+	background-color: #303132;
+	color: white;
+}
+
+#get-started {
+	background-color: #ebebeb;
+}
+
+#get-started > i {
+	color: #303132;
+}
+
+#cards {
+	gap: 30px;
+}
+
+#icons {
+	gap: 50px;
+}
+
+#icons figure:hover {
+	color: #f7931a;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	footer {
+		justify-content: center;
+	}
+
+	footer > p:nth-child(1) {
+		padding-left: 0px;
+	}
+
+	footer > p:nth-child(2) {
+		display: none;
+	}
+}
