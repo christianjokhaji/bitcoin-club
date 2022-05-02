@@ -138,15 +138,17 @@ footer > p:nth-child(2) {
 }
 
 .card {
+	position: relative;
 	background-color: #303132;
 	width: 350px;
 	height: 600px;
 	border-radius: 1.5em;
-	transition: margin-bottom 0.5s;
+	transition: bottom 0.5s;
+	bottom: 0;
 }
 
 .card:hover {
-	margin-bottom: 50px;
+	bottom: 30px;
 }
 
 .card > p {
@@ -188,6 +190,7 @@ footer > p:nth-child(2) {
 
 #get-started > i {
 	color: #303132;
+	padding-bottom: 30px;
 }
 
 #cards {
