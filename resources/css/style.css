@@ -30,6 +30,11 @@ img {
 	width: 144px;
 	height: 144px;
 	margin-bottom: 1rem;
+	transition: transform 5s;
+}
+
+img:hover {
+	transform: rotate(360deg);
 }
 
 blockquote {
@@ -137,6 +142,11 @@ footer > p:nth-child(2) {
 	width: 350px;
 	height: 600px;
 	border-radius: 1.5em;
+	transition: margin-bottom 0.5s;
+}
+
+.card:hover {
+	margin-bottom: 50px;
 }
 
 .card > p {
@@ -186,6 +196,10 @@ footer > p:nth-child(2) {
 
 #icons {
 	gap: 50px;
+}
+
+#icons figure {
+	transition: color 0.5s;
 }
 
 #icons figure:hover {
