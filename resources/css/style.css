@@ -5,6 +5,10 @@ html {
 	font-family: 'Roboto', sans-serif;
 }
 
+body {
+	background-color: #303132;
+}
+
 h1 {
 	font-size: 4rem;
 	color: white;
@@ -178,6 +182,10 @@ footer > p:nth-child(2) {
 }
 
 /* ID Styles */
+
+#introduction {
+	background-color: #ffffff;
+}
 
 #advantages {
 	background-color: #303132;
